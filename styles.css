@@ -6,6 +6,7 @@
     --cor-cinza-secundario: #C0C0C0;
     --cor-azul-botao: #167BF7;
     --cor-fundo: #00030C;
+
     /* Fonts */
     --font-principal: 'Inter', sans-serif;
 }
@@ -27,6 +28,8 @@ body {
     background-image: url(img/Background.png);
     background-repeat: no-repeat;
     background-size: contain;
+    align-items: center;
+    text-align: center;
 }
 
 .container {
@@ -41,8 +44,13 @@ body {
     padding: 1em;
     color: var(--cor-branco-principal);
     display: block;
-    text-align: center;
     text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.container__botao:hover {
+    background-color: var(--cor-branco-principal);
+    color: var(--cor-fundo);
 }
 
 .botao__secundario {
@@ -58,4 +66,102 @@ body {
 .container__titulo {
     font-size: 28px;
     font-weight: 700;
+}
+
+.container__imagem {
+    margin: 1em 0 2em 0;
+}
+
+.container__caixa {
+    margin: 0 6em;
+}
+
+.secundario__imagem {
+    width: 80% ;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--cor-branco-principal);
+    margin-bottom: 0.1em;
+}
+
+.descricao__texto {
+    color: var(--cor-cinza-secundario);
+}
+
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
+    margin-top: 1em;
+}
+
+.container__descricao {
+    padding: 2em;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__titulo {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--cor-branco-principal);
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.lista__item {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--cor-branco-principal);
+}
+
+.rodape {
+    text-align: center;
+    margin: 5em 3em;
+}
+
+.rodape__logo {
+
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 1em;
+}
+
+.lista__link a {
+    text-decoration: none;
+    color: var(--cor-branco-principal);
+    margin-left: 1em;
+}
+
+.lista__link a:hover {
+    color: var(--cor-azul-botao);
+}
+
+.lista__link a:active {
+    color: purple;
+}
+
+.rodape__texto {
+    margin: 1em 0;
+    color: var(--cor-cinza-secundario);
+    font-size: 14px;
+    font-weight: 400;
 }
